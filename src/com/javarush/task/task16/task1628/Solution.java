@@ -1,26 +1,16 @@
 package com.javarush.task.task16.task1628;
 
-import com.sun.org.apache.xpath.internal.operations.Number;
-
 import java.io.BufferedReader;
 import java.io.IOException;
 import java.io.InputStreamReader;
 import java.util.ArrayList;
 import java.util.List;
 import java.util.concurrent.atomic.AtomicInteger;
-/**1. Разберись, что делает программа.
-        1.1. Каждая нить должна читать с консоли строки. Используй готовый static BufferedReader reader.
-        1.2. Используй AtomicInteger countReadStrings, чтобы посчитать, сколько строк уже считано с консоли всеми нитями.
-
-        2. Реализуй логику метода run:
-        2.1. Пока нить не прервана (!isInterrupted) читай с консоли строки и добавляй их в поле List<String> result.
-        2.2. Используй countReadStrings для подсчета уже считанных с консоли строк.
-**/
 
 public class Solution {
     public static volatile AtomicInteger countReadStrings = new AtomicInteger(0);
     public static volatile BufferedReader reader = new BufferedReader(new InputStreamReader(System.in));
-    private  static  volatile boolean isInterrupted = true;
+
     public static void main(String[] args) throws IOException {
         //read count of strings
         int count = Integer.parseInt(reader.readLine());
@@ -30,6 +20,7 @@ public class Solution {
         ReaderThread consolReader2 = new ReaderThread();
         ReaderThread consolReader3 = new ReaderThread();
 
+        // start the method run()
         consolReader1.start();
         consolReader2.start();
         consolReader3.start();
@@ -46,24 +37,18 @@ public class Solution {
 
         reader.close();
     }
-    /**Требования:
-     1.	Метод run должен работать пока нить не прервана (!isInterrupted).
-     2.	Метод run НЕ должен создавать свои InputStreamReader-ы или BufferedReader-ы.
-     3.	Метод run должен считывать слова из reader и добавлять их в список result.
-     4.	Метод run должен после каждого считывания увеличивать счетчик прочитанных строк countReadStrings на 1.
-     5.	Программа должна выводить данные, считанные каждым потоком**/
 
     public static class ReaderThread extends Thread {
-        private List<String> result = new ArrayList<String>();
+        private List<String> result = new ArrayList<String>();//array of read lines
 
         public void run() {
             //add your code here - добавьте код тут
-            int i = 0;
-            while(!isInterrupted) {
-                result.add(String.valueOf(reader));
-                 i++;
-                System.out.println(countReadStrings.addAndGet(i));
-
+            try {
+                String s = reader.readLine();
+                 result.add(s);
+                 countReadStrings.incrementAndGet();
+            } catch (IOException e) {
+                e.printStackTrace();
             }
         }
 
