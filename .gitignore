@@ -1,5 +1,5 @@
 *.class
-*.jrtc
+#*.jrtc
 *.info
 *.iml
 *.png
