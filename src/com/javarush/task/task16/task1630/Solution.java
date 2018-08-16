@@ -7,7 +7,7 @@ package com.javarush.task.task16.task1630;
 +4.	Класс ReadFileThread должен быть унаследован от подходящего класса.
 +5.	Метод run класса ReadFileThread должен считывать строки из файла, установленного методом setFileName. А метод getFileContent, этого же класса, должен возвращать вычитанный контент. Возвращаемое значение - это одна строка, состоящая из строк файла, разделенных пробелами.
 6+.	Метод systemOutPrintln должен вызывать метод join у созданного объекта f.
-7.	Вывод программы должен состоять из 2х строк. Каждая строка - содержимое одного файла.*/
+7+.	Вывод программы должен состоять из 2х строк. Каждая строка - содержимое одного файла.*/
 
 
 import java.io.*;
@@ -79,7 +79,7 @@ public class Solution {
         public void run() {
             try {
                 BufferedReader reader = new BufferedReader(new InputStreamReader(new FileInputStream(fullFileName)));
-                if (reader.ready()) {
+                while (reader.ready()) {
                     String str = reader.readLine();
                     content.add(str);
                 }
@@ -92,12 +92,3 @@ public class Solution {
         }
     }
 }
-
-/*Требования:
-+1.	Статический блок класса Solution должен считывать с консоли имена двух файлов и сохранять их в переменные firstFileName и secondFileName.
-+2.	Объяви в классе Solution public static класс ReadFileThread.
-+3.	Класс ReadFileThread должен реализовывать интерфейс ReadFileInterface.
-+4.	Класс ReadFileThread должен быть унаследован от подходящего класса.
-+5.	Метод run класса ReadFileThread должен считывать строки из файла, установленного методом setFileName. А метод getFileContent, этого же класса, должен возвращать вычитанный контент. Возвращаемое значение - это одна строка, состоящая из строк файла, разделенных пробелами.
-6.	Метод systemOutPrintln должен вызывать метод join у созданного объекта f.
-7.	Вывод программы должен состоять из 2х строк. Каждая строка - содержимое одного файла.*/
