@@ -26,21 +26,17 @@ public class Solution {
 
     static {
 
-
-
     }
 
-    interface TypeThread {
-        String getType();
-    }
-
-    public class ThreadOfFirstType implements Runnable, TypeThread  {
+    public class ThreadOfFirstType extends Thread {
 
         //fields
         private String type;
 
         //methods
-        public void setType(String name) { this.type = name;}
+
+        public void setType(String type) { this.type = type;}
+
         public String getType() {
             return type;
         }
@@ -51,16 +47,19 @@ public class Solution {
     }
 
 
-    public class ThreadOfSecondType implements Runnable, TypeThread {
+    public class ThreadOfSecondType extends Thread {
 
         //fields
         private String type;
 
         //methods
-        public void setType(String name) { this.type = name;}
+
+        public void setType(String type) { this.type = type;}
+
         public String getType() {
             return type;
         }
+
         @Override
         public void run() {
            try {
@@ -72,21 +71,32 @@ public class Solution {
         }
     }
 
+     public class ThreadOfThirdType extends Thread {
+         //fields
+         private String type;
 
-    public class ThreadsTypesFabric {
+         //methods
 
-        public Polygon getThreadOfType() {
-            Polygon th = null;
-            ThreadOfFirstType thT1 = null;
-            Thread th1 = null;
-            if(th.getType().contains("first")) {
-                thT1.setType(th.getType());
-               // th1 = new Thread(thT1);//Thread of first type
-            }
+         public void setType(String type) { this.type = type;}
 
-                return thT1;
-        }
+         public String getType() {
+             return type;
+         }
+
+         @Override
+         public void run() {
+             try {
+                 while (true) {
+                     System.out.println("Ура");
+                     Thread.sleep(500);
+                 }
+             } catch (InterruptedException e) {
+
+             }
+         }
     }
+
+
 
 
 
