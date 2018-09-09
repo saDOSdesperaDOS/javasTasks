@@ -14,7 +14,7 @@ import static java.lang.Thread.currentThread;
   V2.	Нити из списка threads не должны стартовать автоматически.
   V3.	Нить 1 из списка threads должна бесконечно выполняться.
   V4.	Нить 2 из списка threads должна выводить "InterruptedException" при возникновении исключения InterruptedException.
-  5.	Нить 3 из списка threads должна каждые полсекунды выводить "Ура".
+  V5.	Нить 3 из списка threads должна каждые полсекунды выводить "Ура".
   6.	Нить 4 из списка threads должна реализовать интерфейс Message, при вызове метода showWarning нить должна останавливаться.
   7.	Нить 5 из списка threads должна читать с консоли числа пока не введено слово "N", а потом вывести в консоль сумму введенных чисел.
   **/
@@ -27,7 +27,7 @@ public class Solution {
     static {
 
     }
-
+// 1
     public class ThreadOfFirstType extends Thread {
 
         //fields
@@ -46,7 +46,7 @@ public class Solution {
         }
     }
 
-
+// 2
     public class ThreadOfSecondType extends Thread {
 
         //fields
@@ -70,7 +70,7 @@ public class Solution {
            }
         }
     }
-
+// 3
      public class ThreadOfThirdType extends Thread {
          //fields
          private String type;
@@ -93,6 +93,48 @@ public class Solution {
              } catch (InterruptedException e) {
 
              }
+         }
+    }
+
+// 4
+    public class ThreadOfFourthType extends Thread implements Message{
+         //fields
+         private String type;
+
+         //methods
+
+         public void setType(String type) { this.type = type;}
+
+         public String getType() {
+             return type;
+         }
+
+         @Override
+         public void showWarning() {
+
+         }
+
+         @Override
+         public void run() {
+
+         }
+    }
+// 5
+    public class ThreadOfFifthType extends Thread {
+         //fields
+         private String type;
+
+         //methods
+
+         public void setType(String type) { this.type = type;}
+
+         public String getType() {
+             return type;
+         }
+
+         @Override
+         public void run() {
+
          }
     }
 
