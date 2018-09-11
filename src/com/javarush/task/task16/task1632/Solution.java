@@ -25,6 +25,16 @@ public class Solution {
     public static List<Thread> threads = new ArrayList<>(5);
 
     static {
+         ThreadOfFirstType threadOfFirstType = null;
+         threadOfFirstType.setType("ThreadOfFirstType");
+         ThreadOfSecondType threadOfSecondType = null;
+         threadOfSecondType.setType("ThreadOfSecondType");
+         ThreadOfThirdType threadOfThirdType = null;
+         threadOfThirdType.setType("ThreadOfThirdType");
+         ThreadOfFourthType threadOfFourthType = null;
+         threadOfFourthType.setType("ThreadOfFourthType");
+         ThreadOfFifthType threadOfFifthType = null;
+         threadOfFifthType.setType("ThreadOfFifthType");
 
     }
 // 1
