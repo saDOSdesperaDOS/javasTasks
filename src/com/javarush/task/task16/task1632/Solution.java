@@ -26,16 +26,20 @@ public class Solution {
 
     static {
          ThreadOfFirstType threadOfFirstType = null;
-         threadOfFirstType.setType("ThreadOfFirstType");
+         threadOfFirstType.setType("ThreadOfFirstType");//1
          ThreadOfSecondType threadOfSecondType = null;
-         threadOfSecondType.setType("ThreadOfSecondType");
+         threadOfSecondType.setType("ThreadOfSecondType");//2
          ThreadOfThirdType threadOfThirdType = null;
-         threadOfThirdType.setType("ThreadOfThirdType");
+         threadOfThirdType.setType("ThreadOfThirdType");//3
          ThreadOfFourthType threadOfFourthType = null;
-         threadOfFourthType.setType("ThreadOfFourthType");
+         threadOfFourthType.setType("ThreadOfFourthType");//4
          ThreadOfFifthType threadOfFifthType = null;
-         threadOfFifthType.setType("ThreadOfFifthType");
-
+         threadOfFifthType.setType("ThreadOfFifthType");//5
+         threads.add(threadOfFirstType);
+         threads.add(threadOfSecondType);
+         threads.add(threadOfThirdType);
+         threads.add(threadOfFourthType);
+         threads.add(threadOfFifthType);
     }
 // 1
     public class ThreadOfFirstType extends Thread {
