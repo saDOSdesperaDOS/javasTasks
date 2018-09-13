@@ -1,6 +1,9 @@
 package com.javarush.task.task16.task1632;
 
 
+import java.io.BufferedReader;
+import java.io.IOException;
+import java.io.InputStreamReader;
 import java.util.ArrayList;
 import java.util.List;
 import java.util.stream.Stream;
@@ -15,8 +18,8 @@ import static java.lang.Thread.currentThread;
   V3.	Нить 1 из списка threads должна бесконечно выполняться.
   V4.	Нить 2 из списка threads должна выводить "InterruptedException" при возникновении исключения InterruptedException.
   V5.	Нить 3 из списка threads должна каждые полсекунды выводить "Ура".
-  6.	Нить 4 из списка threads должна реализовать интерфейс Message, при вызове метода showWarning нить должна останавливаться.
-  7.	Нить 5 из списка threads должна читать с консоли числа пока не введено слово "N", а потом вывести в консоль сумму введенных чисел.
+  V6.	Нить 4 из списка threads должна реализовать интерфейс Message, при вызове метода showWarning нить должна останавливаться.
+  V7.	Нить 5 из списка threads должна читать с консоли числа пока не введено слово "N", а потом вывести в консоль сумму введенных чисел.
   **/
 
 public class Solution {
@@ -25,77 +28,45 @@ public class Solution {
     public static List<Thread> threads = new ArrayList<>(5);
 
     static {
-         ThreadOfFirstType threadOfFirstType = null;
-         threadOfFirstType.setType("ThreadOfFirstType");//1
-         ThreadOfSecondType threadOfSecondType = null;
-         threadOfSecondType.setType("ThreadOfSecondType");//2
-         ThreadOfThirdType threadOfThirdType = null;
-         threadOfThirdType.setType("ThreadOfThirdType");//3
-         ThreadOfFourthType threadOfFourthType = null;
-         threadOfFourthType.setType("ThreadOfFourthType");//4
-         ThreadOfFifthType threadOfFifthType = null;
-         threadOfFifthType.setType("ThreadOfFifthType");//5
-         threads.add(threadOfFirstType);
-         threads.add(threadOfSecondType);
-         threads.add(threadOfThirdType);
-         threads.add(threadOfFourthType);
-         threads.add(threadOfFifthType);
+
+         threads.add(new ThreadOfFirstType("threadOfFirstType"));
+         threads.add(new ThreadOfSecondType("threadOfSecondType"));
+         threads.add(new ThreadOfThirdType("threadOfThirdType"));
+         threads.add(new ThreadOfFourthType("threadOfFourthType"));
+         threads.add(new ThreadOfFifthType("threadOfFourthType"));
     }
-// 1
-    public class ThreadOfFirstType extends Thread {
 
-        //fields
-        private String type;
+    // 1
+    public static class ThreadOfFirstType extends Thread {
 
-        //methods
+        public ThreadOfFirstType(String type){super(type);}
 
-        public void setType(String type) { this.type = type;}
-
-        public String getType() {
-            return type;
-        }
         @Override
         public void run() {
           if(currentThread().isInterrupted()) currentThread().start();
         }
     }
 
-// 2
-    public class ThreadOfSecondType extends Thread {
+    // 2
+    public static class ThreadOfSecondType extends Thread {
 
-        //fields
-        private String type;
-
-        //methods
-
-        public void setType(String type) { this.type = type;}
-
-        public String getType() {
-            return type;
-        }
+    public ThreadOfSecondType(String type){super(type);}
 
         @Override
         public void run() {
            try {
                currentThread().interrupt();
            }catch(Exception e) {
-               System.out.println(new InterruptedException("Возникло исключение InterruptException"));
+               System.out.println(new InterruptedException("InterruptException"));
                e.printStackTrace();
            }
         }
     }
-// 3
-     public class ThreadOfThirdType extends Thread {
-         //fields
-         private String type;
 
-         //methods
+    // 3
+     public static class ThreadOfThirdType extends Thread {
 
-         public void setType(String type) { this.type = type;}
-
-         public String getType() {
-             return type;
-         }
+         public ThreadOfThirdType(String type){super(type);}
 
          @Override
          public void run() {
@@ -110,50 +81,47 @@ public class Solution {
          }
     }
 
-// 4
-    public class ThreadOfFourthType extends Thread implements Message{
-         //fields
-         private String type;
+    // 4
+    public static class ThreadOfFourthType extends Thread implements Message{
 
-         //methods
+    private boolean die;
 
-         public void setType(String type) { this.type = type;}
-
-         public String getType() {
-             return type;
-         }
+    public ThreadOfFourthType(String type){super(type);}
 
          @Override
          public void showWarning() {
-
+            die = true;
          }
 
          @Override
          public void run() {
+            while (die == false) {
 
+            }
          }
     }
-// 5
-    public class ThreadOfFifthType extends Thread {
-         //fields
-         private String type;
 
-         //methods
+    // 5
+    public static class ThreadOfFifthType extends Thread {
 
-         public void setType(String type) { this.type = type;}
+        private int inInt;
 
-         public String getType() {
-             return type;
-         }
+        public ThreadOfFifthType(String type){super(type);}
 
          @Override
          public void run() {
-
+             BufferedReader bufferedReader = new BufferedReader(new InputStreamReader(System.in));
+             try {
+                 String in = bufferedReader.readLine();
+                 while(!in.equals("N")){
+                     inInt =+ Integer.parseInt(in);
+                 }
+                 System.out.println(inInt);
+             } catch (IOException e) {
+                 e.printStackTrace();
+             }
          }
     }
-
-
-
 
 
     public static void main(String[] args) {
@@ -163,5 +131,4 @@ public class Solution {
             System.out.println("finish");
         }
     }
-
 }
