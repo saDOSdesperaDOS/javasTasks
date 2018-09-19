@@ -3,9 +3,17 @@ package com.javarush.task.task17.task1701;
 import java.util.ArrayList;
 import java.util.List;
 
-/* 
-Заметки
-*/
+/**
+ @author: Mike Blokhin
+ Требования:
+ V1.	Класс Solution должен содержать public static класс NoteThread.
+ V2.	Класс NoteThread должен быть нитью.
+ V3.	В методе run класса NoteThread должен быть цикл.
+ 4.	Метод run класса NoteThread должен 1000 раз вызывать метод addNote c параметром (getName() + "-Note" + index).
+ 5.	Метод run класса NoteThread должен 1000 раз вызывать Thread.sleep() c параметром (1).
+ 6.	Метод run класса NoteThread должен 1000 раз вызывать метод removeNote c параметром (getName()).
+ **/
+
 
 public class Solution {
     public static void main(String[] args) {
@@ -30,6 +38,24 @@ public class Solution {
             } else {
                 System.out.println("Нить [" + threadName + "] удалила свою заметку [" + note + "]");
             }
+        }
+    }
+
+    public static class NoteThread extends Thread {
+        Note note = new Note();
+        @Override
+        public void run() {
+            for (int index = 0; index < 1000; index++) {
+
+                try {
+                    note.addNote(getName() + "-Note" + index);
+                    Thread.sleep(1);
+                    note.removeNote(getName());
+                } catch (InterruptedException e) {
+                    e.printStackTrace();
+                }
+            }
+
         }
     }
 }
