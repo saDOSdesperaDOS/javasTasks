@@ -6,6 +6,14 @@ import java.util.List;
 /* 
 Вместе быстрее? Ща проверим :)
 */
+/**
+ @author: Mike Blokhin
+ Требования:
+ 1.	Класс Solution должен содержать public static класс SortThread.
+ 2.	Класс SortThread должен быть нитью.
+ 3.	В методе run класса SortThread должен вызывать метод sort() с параметром testArray.
+ 4.	Программа должна выводить текст на экран.
+ **/
 
 public class Solution {
     public static int countThreads = 10;
@@ -49,6 +57,13 @@ public class Solution {
                     array[j] = k;
                 }
             }
+        }
+    }
+
+    public static class SortThread extends Thread {
+        @Override
+        public void run() {
+            sort(testArray);
         }
     }
 }
