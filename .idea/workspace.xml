@@ -5,11 +5,10 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="722b621b-7c74-4d10-b072-b5ef8a7dd86b" name="Default" comment="">
-      <change afterPath="$PROJECT_DIR$/src/com/javarush/task/task17/task1706/OurPresident.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/com/javarush/task/task17/task1706/Solution.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/com/javarush/task/task17/task1706/Условие.jrtc" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/com/javarush/task/task17/task1707/IMF.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/com/javarush/task/task17/task1707/Solution.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/com/javarush/task/task17/task1707/Условие.jrtc" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/javarush/task/task17/task1703/Условие.jrtc" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/javarush/task/task17/task1703/Условие.jrtc" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -75,28 +74,28 @@
       <usages-collector id="statistics.file.extensions.open">
         <counts>
           <entry key="gitignore" value="4" />
-          <entry key="java" value="69" />
-          <entry key="jrtc" value="25" />
+          <entry key="java" value="73" />
+          <entry key="jrtc" value="28" />
           <entry key="kt" value="1" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.open">
         <counts>
-          <entry key="JAVA" value="69" />
+          <entry key="JAVA" value="73" />
           <entry key="Kotlin" value="1" />
-          <entry key="PLAIN_TEXT" value="29" />
+          <entry key="PLAIN_TEXT" value="32" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
           <entry key="gitignore" value="2" />
-          <entry key="java" value="7526" />
+          <entry key="java" value="7622" />
           <entry key="jrtc" value="11" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
-          <entry key="JAVA" value="7526" />
+          <entry key="JAVA" value="7622" />
           <entry key="PLAIN_TEXT" value="13" />
         </counts>
       </usages-collector>
@@ -107,24 +106,20 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/com/javarush/task/task17/task1706/Solution.java">
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/com/javarush/task/task17/task1707/IMF.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="195">
-              <caret line="13" column="2" selection-start-line="13" selection-start-column="2" selection-end-line="13" selection-end-column="2" />
+            <state relative-caret-position="135">
+              <caret line="9" column="31" selection-start-line="9" selection-start-column="31" selection-end-line="9" selection-end-column="31" />
             </state>
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/com/javarush/task/task17/task1706/OurPresident.java">
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/com/javarush/task/task17/task1705/Условие.jrtc">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="120">
-              <caret line="8" column="42" selection-start-line="8" selection-start-column="42" selection-end-line="8" selection-end-column="42" />
-              <folding>
-                <element signature="e#256#257#0" expanded="true" />
-                <element signature="e#288#289#0" expanded="true" />
-              </folding>
+            <state relative-caret-position="165">
+              <caret line="11" lean-forward="true" selection-start-line="11" selection-end-line="11" />
             </state>
           </provider>
         </entry>
@@ -132,8 +127,35 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/com/javarush/task/task17/task1706/Условие.jrtc">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="240">
-              <caret line="16" lean-forward="true" selection-start-line="10" selection-end-line="16" />
+            <state relative-caret-position="270">
+              <caret line="18" lean-forward="true" selection-start-line="18" selection-end-line="18" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/com/javarush/task/task17/task1707/Solution.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="195">
+              <caret line="13" column="2" selection-start-line="13" selection-start-column="2" selection-end-line="13" selection-end-column="2" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/com/javarush/task/task17/task1707/Условие.jrtc">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="210">
+              <caret line="14" column="61" lean-forward="true" selection-start-line="14" selection-start-column="61" selection-end-line="14" selection-end-column="61" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/com/javarush/task/task17/task1706/OurPresident.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="120">
+              <caret line="8" column="42" selection-start-line="8" selection-start-column="42" selection-end-line="8" selection-end-column="42" />
             </state>
           </provider>
         </entry>
@@ -185,6 +207,9 @@
         <option value="$PROJECT_DIR$/src/com/javarush/task/task17/task1706/Solution.java" />
         <option value="$PROJECT_DIR$/src/com/javarush/task/task17/task1703/Условие.jrtc" />
         <option value="$PROJECT_DIR$/src/com/javarush/task/task17/task1706/OurPresident.java" />
+        <option value="$PROJECT_DIR$/src/com/javarush/task/task17/task1707/Условие.jrtc" />
+        <option value="$PROJECT_DIR$/src/com/javarush/task/task17/task1707/Solution.java" />
+        <option value="$PROJECT_DIR$/src/com/javarush/task/task17/task1707/IMF.java" />
       </list>
     </option>
   </component>
@@ -243,23 +268,7 @@
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="task" type="462c0819:PsiDirectoryNode" />
               <item name="task17" type="462c0819:PsiDirectoryNode" />
-              <item name="task1701" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="javarushNocashSolution" type="b2602c69:ProjectViewProjectNode" />
-              <item name="javarushNocashSolution" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="task" type="462c0819:PsiDirectoryNode" />
-              <item name="task17" type="462c0819:PsiDirectoryNode" />
-              <item name="task1702" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="javarushNocashSolution" type="b2602c69:ProjectViewProjectNode" />
-              <item name="javarushNocashSolution" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="task" type="462c0819:PsiDirectoryNode" />
-              <item name="task17" type="462c0819:PsiDirectoryNode" />
-              <item name="task1703" type="462c0819:PsiDirectoryNode" />
+              <item name="task1705" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="javarushNocashSolution" type="b2602c69:ProjectViewProjectNode" />
@@ -268,6 +277,14 @@
               <item name="task" type="462c0819:PsiDirectoryNode" />
               <item name="task17" type="462c0819:PsiDirectoryNode" />
               <item name="task1706" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="javarushNocashSolution" type="b2602c69:ProjectViewProjectNode" />
+              <item name="javarushNocashSolution" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="task" type="462c0819:PsiDirectoryNode" />
+              <item name="task17" type="462c0819:PsiDirectoryNode" />
+              <item name="task1707" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -281,7 +298,7 @@
     <property name="Repository.Attach.Sources" value="false" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1537638137300" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1537640169776" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$/../JavaRushTasks-master" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="project.structure.last.edited" value="SDKs" />
@@ -321,7 +338,7 @@
     <configuration name="Solution" type="Application" factoryName="Application" nameIsGenerated="true">
       <option name="ALTERNATIVE_JRE_PATH" value="$JAVA_HOME$/jre" />
       <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="true" />
-      <option name="MAIN_CLASS_NAME" value="com.javarush.task.task17.task1706.Solution" />
+      <option name="MAIN_CLASS_NAME" value="com.javarush.task.task17.task1707.Solution" />
       <module name="javarushNocashSolution" />
       <extension name="coverage">
         <pattern>
@@ -444,12 +461,12 @@
       <workItem from="1537472176141" duration="520000" />
       <workItem from="1537472766696" duration="78000" />
       <workItem from="1537544351607" duration="3326000" />
-      <workItem from="1537633489022" duration="4798000" />
+      <workItem from="1537633489022" duration="6604000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="217948000" />
+    <option name="totallyTimeSpent" value="219754000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -464,16 +481,16 @@
     <frame x="24" y="0" width="1346" height="772" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.22813688" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.22813688" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Image Layers" order="2" />
       <window_info id="Designer" order="3" />
       <window_info id="UI Designer" order="4" />
       <window_info id="Capture Tool" order="5" />
-      <window_info id="Favorites" order="6" side_tool="true" weight="0.32954547" />
+      <window_info id="Favorites" order="6" side_tool="true" weight="0.32927758" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" weight="0.32973805" />
-      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.24345146" />
+      <window_info anchor="bottom" id="Run" order="2" visible="true" weight="0.24345146" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.39753467" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -541,27 +558,6 @@
     </expressions>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/com/javarush/task/task16/task1625/Solution.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="180">
-          <caret line="12" column="23" lean-forward="true" selection-start-line="12" selection-start-column="23" selection-end-line="12" selection-end-column="23" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/javarush/task/task16/task1626/Solution.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="135">
-          <caret line="22" column="58" selection-start-line="22" selection-start-column="58" selection-end-line="22" selection-end-column="58" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/javarush/task/task16/task1627/Solution.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="342">
-          <caret line="88" lean-forward="true" selection-start-line="88" selection-end-line="88" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/com/javarush/task/task16/task1628/Solution.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="795">
@@ -777,13 +773,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/javarush/task/task17/task1705/Условие.jrtc">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="165">
-          <caret line="11" lean-forward="true" selection-start-line="11" selection-end-line="11" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/com/javarush/task/task17/task1705/Solution.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="15">
@@ -796,13 +785,6 @@
             <element signature="e#1687#1688#0" expanded="true" />
             <element signature="e#1757#1758#0" expanded="true" />
           </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/javarush/task/task17/task1706/Условие.jrtc">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="240">
-          <caret line="16" lean-forward="true" selection-start-line="10" selection-end-line="16" />
         </state>
       </provider>
     </entry>
@@ -841,14 +823,45 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/javarush/task/task17/task1705/Условие.jrtc">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="165">
+          <caret line="11" lean-forward="true" selection-start-line="11" selection-end-line="11" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/javarush/task/task17/task1707/Solution.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="195">
+          <caret line="13" column="2" selection-start-line="13" selection-start-column="2" selection-end-line="13" selection-end-column="2" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/com/javarush/task/task17/task1706/OurPresident.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="120">
           <caret line="8" column="42" selection-start-line="8" selection-start-column="42" selection-end-line="8" selection-end-column="42" />
-          <folding>
-            <element signature="e#256#257#0" expanded="true" />
-            <element signature="e#288#289#0" expanded="true" />
-          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/javarush/task/task17/task1706/Условие.jrtc">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="270">
+          <caret line="18" lean-forward="true" selection-start-line="18" selection-end-line="18" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/javarush/task/task17/task1707/Условие.jrtc">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="210">
+          <caret line="14" column="61" lean-forward="true" selection-start-line="14" selection-start-column="61" selection-end-line="14" selection-end-column="61" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/javarush/task/task17/task1707/IMF.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="135">
+          <caret line="9" column="31" selection-start-line="9" selection-start-column="31" selection-end-line="9" selection-end-column="31" />
         </state>
       </provider>
     </entry>
