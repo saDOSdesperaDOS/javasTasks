@@ -7,7 +7,7 @@ taskKey="com.javarush.task.task17.task1703"
 
 
 Требования:
-1.	Метод addNote() должен добавлять записки в список notes.
+1.	Метод addNote() долж ен добавлять записки в список notes.
 2.	Метод removeNote() должен удалять записку из списка notes.
 3.	В методе addNote() должен находиться synchronized блок.
 4.	В методе removeNote() должен находиться synchronized блок.
