@@ -5,8 +5,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="722b621b-7c74-4d10-b072-b5ef8a7dd86b" name="Default" comment="">
-      <change afterPath="$PROJECT_DIR$/src/com/javarush/task/task17/task1710/Solution.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/com/javarush/task/task17/task1710/Условие.jrtc" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
@@ -106,38 +106,27 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/com/javarush/task/task17/task1710/Solution.java">
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/com/javarush/task/task16/task1632/Message.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state>
-              <caret lean-forward="true" />
-              <folding>
-                <element signature="e#771#772#0" expanded="true" />
-                <element signature="e#812#813#0" expanded="true" />
-                <element signature="e#1918#1919#0" expanded="true" />
-                <element signature="e#1962#1963#0" expanded="true" />
-                <element signature="e#2038#2039#0" expanded="true" />
-                <element signature="e#2082#2083#0" expanded="true" />
-                <element signature="e#2136#2137#0" expanded="true" />
-                <element signature="e#2168#2169#0" expanded="true" />
-                <element signature="e#2346#2347#0" expanded="true" />
-                <element signature="e#2371#2372#0" expanded="true" />
-                <element signature="e#2472#2473#0" expanded="true" />
-                <element signature="e#2495#2496#0" expanded="true" />
-                <element signature="e#2688#2689#0" expanded="true" />
-                <element signature="e#2713#2714#0" expanded="true" />
-                <element signature="e#2918#2919#0" expanded="true" />
-                <element signature="e#2942#2943#0" expanded="true" />
-              </folding>
+            <state relative-caret-position="34">
+              <caret line="2" column="17" selection-start-line="2" selection-start-column="17" selection-end-line="2" selection-end-column="17" />
             </state>
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/com/javarush/task/task17/task1710/Условие.jrtc">
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/com/javarush/task/task16/task1632/Solution.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="180">
-              <caret line="12" column="13" selection-start-line="10" selection-end-line="14" selection-end-column="80" />
+            <state relative-caret-position="567">
+              <caret line="35" column="8" lean-forward="true" selection-start-line="35" selection-start-column="8" selection-end-line="35" selection-end-column="8" />
+              <folding>
+                <element signature="imports" expanded="true" />
+                <element signature="e#1536#1537#0" expanded="true" />
+                <element signature="e#1617#1618#0" expanded="true" />
+                <element signature="e#2689#2690#0" expanded="true" />
+                <element signature="e#2724#2725#0" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -155,6 +144,11 @@
   <component name="Git.Settings">
     <option name="UPDATE_CHANGES_POLICY" value="SHELVE" />
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+    <option name="RECENT_BRANCH_BY_REPOSITORY">
+      <map>
+        <entry key="$PROJECT_DIR$" value="master" />
+      </map>
+    </option>
   </component>
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
@@ -220,38 +214,69 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="PackagesPane" />
       <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
             <path>
-              <item name="javarushNocashSolution" type="b2602c69:ProjectViewProjectNode" />
-              <item name="javarushNocashSolution" type="462c0819:PsiDirectoryNode" />
+              <item name="javasTasks" type="b2602c69:ProjectViewProjectNode" />
+              <item name="javasTasks" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
-              <item name="javarushNocashSolution" type="b2602c69:ProjectViewProjectNode" />
-              <item name="javarushNocashSolution" type="462c0819:PsiDirectoryNode" />
+              <item name="javasTasks" type="b2602c69:ProjectViewProjectNode" />
+              <item name="javasTasks" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
-              <item name="javarushNocashSolution" type="b2602c69:ProjectViewProjectNode" />
-              <item name="javarushNocashSolution" type="462c0819:PsiDirectoryNode" />
+              <item name="javasTasks" type="b2602c69:ProjectViewProjectNode" />
+              <item name="javasTasks" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="com" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="javasTasks" type="b2602c69:ProjectViewProjectNode" />
+              <item name="javasTasks" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="com" type="462c0819:PsiDirectoryNode" />
+              <item name="javarush" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="javasTasks" type="b2602c69:ProjectViewProjectNode" />
+              <item name="javasTasks" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="com" type="462c0819:PsiDirectoryNode" />
+              <item name="javarush" type="462c0819:PsiDirectoryNode" />
               <item name="task" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
-              <item name="javarushNocashSolution" type="b2602c69:ProjectViewProjectNode" />
-              <item name="javarushNocashSolution" type="462c0819:PsiDirectoryNode" />
+              <item name="javasTasks" type="b2602c69:ProjectViewProjectNode" />
+              <item name="javasTasks" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="com" type="462c0819:PsiDirectoryNode" />
+              <item name="javarush" type="462c0819:PsiDirectoryNode" />
               <item name="task" type="462c0819:PsiDirectoryNode" />
               <item name="task17" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="javasTasks" type="b2602c69:ProjectViewProjectNode" />
+              <item name="javasTasks" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="com" type="462c0819:PsiDirectoryNode" />
+              <item name="javarush" type="462c0819:PsiDirectoryNode" />
+              <item name="task" type="462c0819:PsiDirectoryNode" />
+              <item name="task17" type="462c0819:PsiDirectoryNode" />
+              <item name="task1710" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="javasTasks" type="b2602c69:ProjectViewProjectNode" />
+              <item name="External Libraries" type="cb654da1:ExternalLibrariesNode" />
             </path>
           </expand>
           <select />
         </subPane>
       </pane>
       <pane id="AndroidView" />
-      <pane id="PackagesPane" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -260,11 +285,11 @@
     <property name="Repository.Attach.Sources" value="false" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1537996065897" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1544087913346" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../javarushNocashSolution" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
-    <property name="project.structure.last.edited" value="SDKs" />
-    <property name="project.structure.proportion" value="0.0" />
+    <property name="project.structure.last.edited" value="Modules" />
+    <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.2" />
     <property name="settings.editor.selected.configurable" value="preferences.general" />
   </component>
@@ -298,10 +323,10 @@
       </method>
     </configuration>
     <configuration name="Solution" type="Application" factoryName="Application" nameIsGenerated="true">
-      <option name="ALTERNATIVE_JRE_PATH" value="$JAVA_HOME$/jre" />
+      <option name="ALTERNATIVE_JRE_PATH" value="C:\Program Files\Java\jdk1.8.0_181\jre" />
       <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="true" />
       <option name="MAIN_CLASS_NAME" value="com.javarush.task.task17.task1710.Solution" />
-      <module name="javarushNocashSolution" />
+      <module name="javasTasks" />
       <extension name="coverage">
         <pattern>
           <option name="PATTERN" value="com.javarush.task.task16.task1624.*" />
@@ -431,7 +456,7 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="228639000" />
+    <option name="totallyTimeSpent" value="228899000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -443,9 +468,9 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="24" y="0" width="1346" height="772" extended-state="6" />
+    <frame x="54" y="-8" width="1874" height="1096" extended-state="6" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" weight="0.22813688" />
+      <window_info content_ui="combo" id="Project" order="0" weight="0.22167756" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Image Layers" order="2" />
       <window_info id="Designer" order="3" />
@@ -462,7 +487,7 @@
       <window_info anchor="bottom" id="Terminal" order="7" sideWeight="0.49848485" weight="0.22307692" />
       <window_info anchor="bottom" id="Messages" order="8" weight="0.3266564" />
       <window_info anchor="bottom" id="Database Changes" order="9" show_stripe_button="false" />
-      <window_info anchor="bottom" id="Event Log" order="10" sideWeight="0.50151515" side_tool="true" weight="0.32511556" />
+      <window_info anchor="bottom" id="Event Log" order="10" sideWeight="0.50151515" side_tool="true" weight="0.32502595" />
       <window_info anchor="bottom" id="Version Control" order="11" weight="0.3266564" />
       <window_info anchor="right" id="Commander" order="0" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" show_stripe_button="false" weight="0.25" />
@@ -620,8 +645,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/com/javarush/task/task16/task1632/Message.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="45">
-          <caret line="3" column="23" selection-start-line="3" selection-start-column="4" selection-end-line="3" selection-end-column="23" />
+        <state relative-caret-position="34">
+          <caret line="2" column="17" selection-start-line="2" selection-start-column="17" selection-end-line="2" selection-end-column="17" />
         </state>
       </provider>
     </entry>
@@ -634,18 +659,19 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/com/javarush/task/task16/task1632/Solution.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="285">
-          <caret line="19" column="5" lean-forward="true" selection-start-line="9" selection-end-line="19" selection-end-column="5" />
+        <state relative-caret-position="567">
+          <caret line="35" column="8" lean-forward="true" selection-start-line="35" selection-start-column="8" selection-end-line="35" selection-end-column="8" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#1536#1537#0" expanded="true" />
+            <element signature="e#1617#1618#0" expanded="true" />
+            <element signature="e#2689#2690#0" expanded="true" />
+            <element signature="e#2724#2725#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
-    <entry file="jar://$JAVA_HOME$/src.zip!/java/net/URLClassLoader.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="436">
-          <caret line="383" column="5" lean-forward="true" selection-start-line="383" selection-start-column="5" selection-end-line="383" selection-end-column="5" />
-        </state>
-      </provider>
-    </entry>
+    <entry file="jar://$JAVA_HOME$/src.zip!/java/net/URLClassLoader.java" />
     <entry file="file://$PROJECT_DIR$/src/com/javarush/task/task16/task1633/Условие.jrtc">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="375">
