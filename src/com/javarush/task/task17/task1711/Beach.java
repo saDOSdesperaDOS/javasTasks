@@ -9,7 +9,7 @@ Comparable
  Требования:
  V1.	Класс Beach должен содержать три поля: String name, float distance, int quality.
  V2.	Класс Beach должен реализовывать интерфейс Comparable<Beach>.
- 3.	Метод compareTo класса Beach как минимум должен учитывать качество пляжа и дистанцию.
+ V3.	Метод compareTo класса Beach как минимум должен учитывать качество пляжа и дистанцию.
  V4.	Все методы класса Beach, кроме метода main, должны быть синхронизированы.
  **/
 
@@ -52,8 +52,6 @@ public class Beach implements Comparable<Beach> {
         Beach b1 = new Beach("beach1", 3.5055488f, 18);
         Beach b2 = new Beach("beach2", 1.5055488f, 58);
         b1.compareTo(b2);
-
-
     }
 
     @Override
@@ -61,16 +59,9 @@ public class Beach implements Comparable<Beach> {
         int dif = 0;
         int r = 0;
         dif = (int) (this.getDistance()*this.getQuality()/2 - o.getDistance()*o.getQuality()/2);
-        if (dif != 0) {
-            r = dif > 0 ? 1 : -1;
-        }
+        if (dif != 0) r = dif > 0 ? 1 : -1;
         if (r == 1) System.out.print(r + " ,First " + dif);
         else System.out.print(r +" ,Two " + dif);
         return r  ;
-
-
     }
-
-
-
 }
