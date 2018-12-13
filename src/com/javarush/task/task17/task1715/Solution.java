@@ -10,8 +10,8 @@ package com.javarush.task.task17.task1715;
  V2.	Класс Solution должен содержать public static класс Iron.
  V3.	Класс Solution должен содержать public static класс Person.
  V4.	Класс Person должен быть нитью.
- 5.	В методе run() класса Person должен быть synchronized блок.
- 6.	Synchronized блок должен использовать блокировку на уровне класса.
+ V5.	В методе run() класса Person должен быть synchronized блок.
+ V6.	Synchronized блок должен использовать блокировку на уровне класса.
  **/
 
 public class Solution {
