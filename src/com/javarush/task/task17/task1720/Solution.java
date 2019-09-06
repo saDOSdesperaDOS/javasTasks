@@ -4,6 +4,7 @@ import java.io.BufferedReader;
 import java.io.IOException;
 import java.io.InputStreamReader;
 import java.text.DateFormat;
+import java.text.ParseException;
 import java.text.SimpleDateFormat;
 import java.util.ArrayList;
 import java.util.Date;
@@ -53,29 +54,36 @@ id соответствует индексу в списке
 
 public class Solution {
     public static List<Person> allPeople = new ArrayList<Person>();
-    static SimpleDateFormat date = new SimpleDateFormat("dd/dd/dddd", Locale.ENGLISH);
+    static DateFormat dateFormat = new SimpleDateFormat("MM/dd/yyyy", Locale.ENGLISH);
+    static DateFormat dateFormatParrent = new SimpleDateFormat("MM-dd-yyyy", Locale.ENGLISH);
+   
     static {
         allPeople.add(Person.createMale("Иванов Иван", new Date()));  //сегодня родился    id=0
         allPeople.add(Person.createMale("Петров Петр", new Date()));  //сегодня родился    id=1
     }
 
-    public static void main(String[] args) {
+    public static void main(String[] args) throws ParseException {
         //start here - начни тут
-        try {
+       /* try {
           BufferedReader reader = new BufferedReader(new InputStreamReader(System.in));
-          String input = reader.readLine();
-          char ch = input.charAt(1);
-            System.out.println(date());
-        } catch (IOException e) {
+          String input = reader.readLine();*/
+     
+       
+         // System.out.println( new Date().toInstant());
+          System.out.println( dateFormatParrent.parse("08-12-1987").toInstant());
+          
+         
+       /* } catch (IOException e) {
               e.printStackTrace();
-        }
+        }*/
 
     }
 
-    public boolean regExpValidator(String email) {
-
-        Pattern p = Pattern.compile("/A[a-zA-Z]{1}/s[a-zA-Z]{3,10}/s[a-zA-Z]{1}/s" + date +"/Z");
-        Matcher m = p.matcher(email);
+    public static boolean regExpValidator(String email) {
+        Pattern p0 = Pattern.compile("\\D{2}\\s\\D{2,12}\\s\\D{1}\\s");
+        Pattern p1 = Pattern.compile("\\D{2}\\s\\D{2,12}\\s\\D{1}\\s");
+       // Pattern p = Pattern.compile("/A[a-zA-Z]{1}/s[a-zA-Z]{3,10}/s[a-zA-Z]{1}/s" + date +"/Z");
+        Matcher m = p0.matcher(email);
         return m.matches();
     }
 
