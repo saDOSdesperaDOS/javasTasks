@@ -7,9 +7,11 @@ import java.text.DateFormat;
 import java.text.ParseException;
 import java.text.SimpleDateFormat;
 import java.util.ArrayList;
+import java.util.Calendar;
 import java.util.Date;
 import java.util.List;
 import java.util.Locale;
+import java.util.TimeZone;
 import java.util.regex.Matcher;
 import java.util.regex.Pattern;
 
@@ -54,8 +56,8 @@ id соответствует индексу в списке
 
 public class Solution {
     public static List<Person> allPeople = new ArrayList<Person>();
-    static DateFormat dateFormat = new SimpleDateFormat("MM/dd/yyyy", Locale.ENGLISH);
-    static DateFormat dateFormatParrent = new SimpleDateFormat("MM-dd-yyyy", Locale.ENGLISH);
+    static DateFormat dateFormat = new SimpleDateFormat("dd/MM/yyyy", Locale.ENGLISH);
+    static DateFormat dateFormatP = new SimpleDateFormat("dd-MM-yyyy", Locale.ENGLISH);
    
     static {
         allPeople.add(Person.createMale("Иванов Иван", new Date()));  //сегодня родился    id=0
@@ -67,10 +69,16 @@ public class Solution {
        /* try {
           BufferedReader reader = new BufferedReader(new InputStreamReader(System.in));
           String input = reader.readLine();*/
-     
-       
-         // System.out.println( new Date().toInstant());
-          System.out.println( dateFormatParrent.parse("08-12-1987").toInstant());
+    	Date date = dateFormat.parse("11/05/1990");
+    	String str = "-с Мироновук м 11/05/1990";
+    	StringBuffer stringBuffer = new StringBuffer(str);
+    	System.out.println(stringBuffer.indexOf(dateFormat.format(date)));
+    	//System.out.println(stringBuffer.);
+    	System.out.println( date);
+       System.out.println( dateFormat.format(date));
+       System.out.println( dateFormatP.format(date));
+          
+          //System.out.println( dateFormat.DAY_OF_YEAR_FIELD);
           
          
        /* } catch (IOException e) {
