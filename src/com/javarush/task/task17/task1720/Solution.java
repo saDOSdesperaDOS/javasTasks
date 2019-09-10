@@ -71,14 +71,13 @@ public class Solution {
           String input = reader.readLine();*/
     	Date date = dateFormat.parse("11/05/1990");
     	String str = "-с Мироновук м 11/05/1990";
-    	StringBuffer stringBuffer = new StringBuffer(str);
-    	System.out.println(stringBuffer.indexOf(dateFormat.format(date)));
-    	//System.out.println(stringBuffer.);
+    	String[] stringBuffer = str.split(" ");
+    	System.out.println(stringBuffer.length);
+    	System.out.println(stringBuffer[0]);
     	System.out.println( date);
-       System.out.println( dateFormat.format(date));
-       System.out.println( dateFormatP.format(date));
+        System.out.println( dateFormat.format(date));
+        System.out.println( dateFormatP.format(date));
           
-          //System.out.println( dateFormat.DAY_OF_YEAR_FIELD);
           
          
        /* } catch (IOException e) {
