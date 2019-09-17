@@ -65,25 +65,32 @@ public class Solution {
     }
 
     public static void main(String[] args) throws ParseException {
-        //start here - начни тут
-       /* try {
-          BufferedReader reader = new BufferedReader(new InputStreamReader(System.in));
-          String input = reader.readLine();*/
+        /*BufferedReader reader = new BufferedReader(new InputStreamReader(System.in));
+        String input = reader.readLine();*/
     	Date date = dateFormat.parse("11/05/1990");
-    	String str = "-с Мироновук м 11/05/1990";
-    	String[] stringBuffer = str.split(" ");
-    	System.out.println(stringBuffer.length);
-    	System.out.println(stringBuffer[0]);
-    	System.out.println( date);
-        System.out.println( dateFormat.format(date));
-        System.out.println( dateFormatP.format(date));
-          
-          
-         
-       /* } catch (IOException e) {
-              e.printStackTrace();
-        }*/
-
+    	String str = "-c Баранов м 24/07/1984";
+    	String[] strSplit = str.split(" ");
+    	switch(strSplit[0]) {
+    		case ("-c") : 
+    			Person p = null;
+    			if(strSplit[2].equals("м")) p = Person.createMale(strSplit[1], dateFormat.parse(strSplit[3]));
+    	    	else p = Person.createFemale(strSplit[1], dateFormat.parse(strSplit[3]));
+    			synchronized (allPeople) {
+    				allPeople.add(p);
+    			}
+    			for(Person person : allPeople) {
+    	    		System.out.println(person.getName() + " " + person.getSex() + " " + person.getBirthDay());
+    	    	}
+    			break;
+    		case("-u") : System.out.println("обновлять данные человека с заданным id в списке allPeople.")	;
+         		break;
+    	}
+    	
+    	System.out.println(allPeople.size());
+    	System.out.println(allPeople.toString());
+    	System.out.println(date);
+        System.out.println(dateFormat.format(date));
+        System.out.println(dateFormatP.format(date));
     }
 
     public static boolean regExpValidator(String email) {
