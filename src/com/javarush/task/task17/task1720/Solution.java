@@ -48,8 +48,8 @@ id соответствует индексу в списке
 Требования:
 1.V	Класс Solution должен содержать public static поле allPeople типа List<Person>.
 2.V	Класс Solution должен содержать статический блок, в котором добавляются два человека в список allPeople.
-3.	При запуске программы с параметром -с программа должна добавлять человека с заданными параметрами в конец списка allPeople, и выводить id (index) на экран.
-4.	При запуске программы с параметром -u программа должна обновлять данные человека с заданным id в списке allPeople.
+3.V	При запуске программы с параметром -с программа должна добавлять человека с заданными параметрами в конец списка allPeople, и выводить id (index) на экран.
+4.V	При запуске программы с параметром -u программа должна обновлять данные человека с заданным id в списке allPeople.
 5.	При запуске программы с параметром -d программа должна логически удалять человека с заданным id в списке allPeople.
 6.	При запуске программы с параметром -i программа должна выводить на экран данные о человеке с заданным id по формату указанному в задании.
 */
@@ -67,27 +67,34 @@ public class Solution {
     public static void main(String[] args) throws ParseException {
         /*BufferedReader reader = new BufferedReader(new InputStreamReader(System.in));
         String input = reader.readLine();*/
+    	Person p;
     	Date date = dateFormat.parse("11/05/1990");
-    	String str = "-c Баранов м 24/07/1984";
+    	String str = "-u 1 Бубликов м 11/04/1999";//"-c Баранов м 24/07/1984";
     	String[] strSplit = str.split(" ");
     	switch(strSplit[0]) {
     		case ("-c") : 
-    			Person p = null;
     			if(strSplit[2].equals("м")) p = Person.createMale(strSplit[1], dateFormat.parse(strSplit[3]));
-    	    	else p = Person.createFemale(strSplit[1], dateFormat.parse(strSplit[3]));
-    			synchronized (allPeople) {
-    				allPeople.add(p);
-    			}
-    			for(Person person : allPeople) {
-    	    		System.out.println(person.getName() + " " + person.getSex() + " " + person.getBirthDay());
-    	    	}
-    			break;
-    		case("-u") : System.out.println("обновлять данные человека с заданным id в списке allPeople.")	;
+    	    		else p = Person.createFemale(strSplit[1], dateFormat.parse(strSplit[3]));
+    		//конец if
+    					synchronized (allPeople) {  /* добавили человечка                */
+    						allPeople.add(p);		/* в конец списка                   */
+    					}
+    						System.out.println("id=" + (allPeople.size()-1));
+    						break;
+    		case("-u") : 
+    			/*-u id name sex bd*/
+    			System.out.println("обновлять данные человека с заданным id в списке allPeople.");
+	    		int index = Integer.parseInt(strSplit[1]) - 1;	
+	    		p = allPeople.get(index);
+    			System.out.println(p.getName());
+    			/*Tеперь можно обновить значения полей у Person p*/
+    			p.setName(strSplit[2]);
+    			p.setBirthDay(dateFormat.parse(strSplit[4]));
+    			System.out.println(p.getName());
+    			System.out.println(p.getBirthDay());
          		break;
     	}
     	
-    	System.out.println(allPeople.size());
-    	System.out.println(allPeople.toString());
     	System.out.println(date);
         System.out.println(dateFormat.format(date));
         System.out.println(dateFormatP.format(date));
@@ -96,7 +103,6 @@ public class Solution {
     public static boolean regExpValidator(String email) {
         Pattern p0 = Pattern.compile("\\D{2}\\s\\D{2,12}\\s\\D{1}\\s");
         Pattern p1 = Pattern.compile("\\D{2}\\s\\D{2,12}\\s\\D{1}\\s");
-       // Pattern p = Pattern.compile("/A[a-zA-Z]{1}/s[a-zA-Z]{3,10}/s[a-zA-Z]{1}/s" + date +"/Z");
         Matcher m = p0.matcher(email);
         return m.matches();
     }
