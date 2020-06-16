@@ -23,13 +23,22 @@ public class Solution {
                     return "DashboardTable";
                 }
             };
+
             BTable table = new TableAdapter(aTable);
             System.out.println(table.getHeaderText());
         }
 
-        public static class TableAdapter {
+        public static class TableAdapter implements BTable {
+            private  ATable aTable;
             TableAdapter(ATable aTable) {
+                this.aTable = aTable;
+            }
 
+            @Override
+            public String getHeaderText() {
+                String nameTable = aTable.getTableName();
+                String nameUser = aTable.getCurrentUserName();
+                return "[" + nameUser + "]" + " : " + nameTable;
             }
         }
 
